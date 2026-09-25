@@ -1,26 +1,22 @@
-import styles from "./CruiseCard.module.css";
+import styles from "./CruiseOverview.module.css";
 
-function CruiseCard({ cruise }) {
-  const { cruiseLine, ship, sailing, destination } = cruise;
+function CruiseOverview({ cruise }) {
+  const { cruiseLine, ship, destination } = cruise;
 
   return (
     <article className={styles.container}>
       <h2>{cruiseLine}</h2>
-
-      <p>{ship.name}</p>
-
-      <div className={styles.port}>
-        <strong>Departure Port Info</strong>
-
-        <p>{sailing.departure.port.name}</p>
-        <p>{sailing.departure.port.city}</p>
-        <p>{sailing.departure.port.state}</p>
-        <p>{sailing.departure.port.country}</p>
+      <div>
+        <p>{ship.name}</p>
+        <p>{ship.class}</p>
+        <p>{ship.yearBuilt}</p>
+        <p>{ship.capacity}</p>
+        <p>{ship.rating}</p>
       </div>
-
-      <p>
-        <strong>Destination:</strong> {destination.region}
-      </p>
+      <div>
+        <p>{destination.region}</p>
+        <p>{destination.description}</p>
+      </div>
     </article>
   );
 }
@@ -138,4 +134,4 @@ Acceptance Criteria
 - All Criteria Completed!
 */
 
-export default CruiseCard;
+export default CruiseOverview;

@@ -1,3 +1,61 @@
 .container {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 1.5rem;
+
+  border: 1px solid #d9dee5;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+}
+
+.container > article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.container h2 {
+  margin: 0;
+
+  font-size: 1.25rem;
+}
+
+.container p {
+  margin: 0;
+}
+
+.container > article > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.container > article > div:last-child {
+  padding-top: 1rem;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  padding: 0.75rem;
+
+  border-radius: 6px;
+
+  background-color: #f5f7fa;
+}
+
+.activity p {
+  margin: 0;
 }

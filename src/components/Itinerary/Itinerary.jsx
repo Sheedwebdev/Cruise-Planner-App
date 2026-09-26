@@ -40,8 +40,9 @@ function ItineraryDay({ itineraryDay }) {
 
 function ActivityCard({ activity }) {
   const { name, category, durationMinutes } = activity;
+
   return (
-    <article>
+    <article className={styles.activity}>
       <p>Activity: {name}</p>
       <p>Category: {category}</p>
       <p>Duration: {durationMinutes} min</p>

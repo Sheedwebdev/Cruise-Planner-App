@@ -1,4 +1,7 @@
+import styles from "./CruiseDetailsPage.module.css";
+
 import cruiseData from "../data/cruiseData";
+
 import CruiseOverview from "../components/CruiseOverview/CruiseOverview";
 import SailingDetails from "../components/SailingDetails/SailingDetails";
 import Itinerary from "../components/Itinerary/Itinerary";
@@ -7,20 +10,20 @@ import CruiseFeatures from "../components/CruiseFeatures/CruiseFeatures";
 
 function CruiseDetailsPage() {
   const selectedCruise = cruiseData[3];
+
   return (
-    <main>
+    <main className={styles.container}>
       <CruiseOverview cruise={selectedCruise} />
+
       <SailingDetails cruise={selectedCruise} />
+
       <Itinerary itinerary={selectedCruise.itinerary} />
-      <CabinOptions />
-      <CruiseFeatures />
+
+      <CabinOptions cabins={selectedCruise.cabins} />
+
+      <CruiseFeatures features={selectedCruise.features} />
     </main>
   );
 }
 
 export default CruiseDetailsPage;
-
-/*
-Acceptance Criteria
-- Assign values to all props for the each component instance being rendered.
-*/

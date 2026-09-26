@@ -22,6 +22,8 @@ function SailingDetails({ cruise }) {
         <p>City: {arrival.port.city}</p>
         <p>State: {arrival.port.state}</p>
         <p>Country: {arrival.port.country}</p>
+        <p>Date: {arrival.date}</p>
+        <p>Time: {arrival.time}</p>
       </div>
       <h2>Duration</h2>
       <div>

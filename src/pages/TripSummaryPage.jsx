@@ -1,3 +1,4 @@
+import styles from "./TripSummaryPage.module.css";
 import CruiseSummary from "../components/CruiseSummary/CruiseSummary";
 import FlightSummary from "../components/FlightSummary/FlightSummary";
 import AirBnbSummary from "../components/AirBnbSummary/AirBnbSummary";
@@ -13,16 +14,30 @@ function TripSummaryPage() {
   const selectedAirbnb = airbnbData[0];
 
   return (
-    <main>
-      <h1>Trip Summary</h1>
-      <CruiseSummary cruise={selectedCruise} />
-      <FlightSummary flight={selectedFlight} />
-      <AirBnbSummary airbnb={selectedAirbnb} />
-      <TripCostSummary
-        cruise={selectedCruise}
-        flight={selectedFlight}
-        airbnb={selectedAirbnb}
-      />
+    <main className={styles.container}>
+      <h1 className={styles.title}>Trip Summary</h1>
+
+      <section className={styles.section}>
+        {<CruiseSummary cruise={selectedCruise} />}
+      </section>
+
+      <section className={styles.section}>
+        {<FlightSummary flight={selectedFlight} />}
+      </section>
+
+      <section className={styles.section}>
+        {<AirBnbSummary airbnb={selectedAirbnb} />}
+      </section>
+
+      <section className={styles.section}>
+        {
+          <TripCostSummary
+            cruise={selectedCruise}
+            flight={selectedFlight}
+            airbnb={selectedAirbnb}
+          />
+        }
+      </section>
     </main>
   );
 }

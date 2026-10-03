@@ -1,38 +1,50 @@
 import styles from "./TripCostSummary.module.css";
 
-function TripCostSummary() {
+function TripCostSummary({ cruise, flight, airbnb }) {
+  const selectedCabin = cruise.cabins[0];
+
+  const totalCruisePrice = selectedCabin.price.amount;
+
+  const totalFlightPrice = flight.price.amount;
+
+  const totalAirbnbPrice = airbnb.price.total;
+
+  const priceCurrency = selectedCabin.price.currency;
+
+  const totalTripPrice = totalCruisePrice + totalFlightPrice + totalAirbnbPrice;
+
   return (
     <div className={styles.container}>
-      <h2>Trip Cost Summary</h2>
+      <h2 className={styles.title}>Trip Cost Summary</h2>
+
+      <div className={styles.costs}>
+        <p className={styles.cost}>
+          <strong>Total Cruise Price:</strong>
+          <span>{totalCruisePrice}</span>
+        </p>
+
+        <p className={styles.cost}>
+          <strong>Total Flight Price:</strong>
+          <span>{totalFlightPrice}</span>
+        </p>
+
+        <p className={styles.cost}>
+          <strong>Total Airbnb Price:</strong>
+          <span>{totalAirbnbPrice}</span>
+        </p>
+
+        <p className={styles.cost}>
+          <strong>Currency:</strong>
+          <span>{priceCurrency}</span>
+        </p>
+      </div>
+
+      <div className={styles.total}>
+        <strong>Total Trip Price:</strong>
+        <span>{totalTripPrice}</span>
+      </div>
     </div>
   );
 }
-
-/*
-Acceptance Criteria
- Receive cruise through props
- Receive flight through props
- Receive airbnb through props
- Access the first cabin from the selected cruise using cruise.cabins[0]
- Retrieve the cabin's price amount
- Display the cruise/cabin price
- Retrieve the flight price amount
- Display the flight price
- Retrieve the Airbnb total price
- Display the Airbnb price
- Retrieve the currency from the appropriate price objects
- Calculate the combined trip cost using the cruise cabin price + flight price + Airbnb total
- Store the calculated combined cost in a variable
- Display the calculated combined trip cost
- Do not hard-code the combined trip cost
- Use the actual data received through props
- Use appropriate nested destructuring where it makes the code clearer
- Organize the cruise, flight, Airbnb, and total costs into logical JSX sections
- Apply the CSS Module using className
- Do not use React hooks
- Do not add event handlers
- Do not add user interaction
- Export TripCostSummary as the default export
-*/
 
 export default TripCostSummary;

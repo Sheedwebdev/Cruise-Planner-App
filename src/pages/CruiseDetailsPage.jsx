@@ -10,7 +10,6 @@ import CruiseFeatures from "../components/CruiseFeatures/CruiseFeatures";
 
 function CruiseDetailsPage() {
   const selectedCruise = cruiseData[3];
-
   return (
     <main className={styles.container}>
       <CruiseOverview cruise={selectedCruise} />

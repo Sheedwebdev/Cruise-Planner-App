@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className={styles.container}>
-      <h1>Cruise Travel App</h1>
+      <h1>Cruise Trip Planner</h1>
       <nav style={{ display: "flex", gap: "20px" }}>
         <Link to="/">Home</Link>
         <Link to="/cruise-details">Cruise Details</Link>

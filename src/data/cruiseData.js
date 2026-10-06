@@ -9,6 +9,7 @@ const cruiseData = [
       capacity: 6988,
       rating: 4.8,
     },
+
     sailing: {
       departure: {
         port: {
@@ -20,6 +21,7 @@ const cruiseData = [
         date: "2026-12-06",
         time: "4:30 PM",
       },
+
       arrival: {
         port: {
           name: "Port Canaveral",
@@ -30,15 +32,18 @@ const cruiseData = [
         date: "2026-12-13",
         time: "6:30 AM",
       },
+
       duration: {
         nights: 7,
         days: 8,
       },
     },
+
     destination: {
       region: "Caribbean",
       description: "Western Caribbean",
     },
+
     itinerary: [
       {
         day: 1,
@@ -59,7 +64,141 @@ const cruiseData = [
           },
         ],
       },
+      {
+        day: 2,
+        date: "2026-12-07",
+        port: {
+          name: "CocoCay",
+          country: "Bahamas",
+          type: "port_of_call",
+        },
+        arrivalTime: "7:00 AM",
+        departureTime: "5:00 PM",
+        activities: [
+          {
+            id: "ACT-102",
+            name: "Perfect Day at CocoCay",
+            category: "Excursion",
+            durationMinutes: 480,
+          },
+        ],
+      },
+      {
+        day: 3,
+        date: "2026-12-08",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-103",
+            name: "Pool and Entertainment",
+            category: "Entertainment",
+            durationMinutes: 240,
+          },
+        ],
+      },
+      {
+        day: 4,
+        date: "2026-12-09",
+        port: {
+          name: "Cozumel",
+          country: "Mexico",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: "6:00 PM",
+        activities: [
+          {
+            id: "ACT-104",
+            name: "Cozumel Island Tour",
+            category: "Excursion",
+            durationMinutes: 360,
+          },
+        ],
+      },
+      {
+        day: 5,
+        date: "2026-12-10",
+        port: {
+          name: "Costa Maya",
+          country: "Mexico",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: "5:00 PM",
+        activities: [
+          {
+            id: "ACT-105",
+            name: "Mayan Ruins Excursion",
+            category: "Excursion",
+            durationMinutes: 300,
+          },
+        ],
+      },
+      {
+        day: 6,
+        date: "2026-12-11",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-106",
+            name: "Specialty Dining",
+            category: "Dining",
+            durationMinutes: 120,
+          },
+        ],
+      },
+      {
+        day: 7,
+        date: "2026-12-12",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-107",
+            name: "Final Day Entertainment",
+            category: "Entertainment",
+            durationMinutes: 180,
+          },
+        ],
+      },
+      {
+        day: 8,
+        date: "2026-12-13",
+        port: {
+          name: "Port Canaveral",
+          country: "United States",
+          type: "arrival",
+        },
+        arrivalTime: "6:30 AM",
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-108",
+            name: "Disembarkation",
+            category: "Cruise",
+            durationMinutes: 120,
+          },
+        ],
+      },
     ],
+
     cabins: [
       {
         id: "CAB-101",
@@ -87,6 +226,7 @@ const cruiseData = [
         ],
       },
     ],
+
     features: [
       {
         name: "AquaTheater",
@@ -106,6 +246,7 @@ const cruiseData = [
       capacity: 5374,
       rating: 4.6,
     },
+
     sailing: {
       departure: {
         port: {
@@ -117,6 +258,7 @@ const cruiseData = [
         date: "2027-01-10",
         time: "4:00 PM",
       },
+
       arrival: {
         port: {
           name: "PortMiami",
@@ -127,15 +269,18 @@ const cruiseData = [
         date: "2027-01-17",
         time: "8:00 AM",
       },
+
       duration: {
         nights: 7,
         days: 8,
       },
     },
+
     destination: {
       region: "Caribbean",
       description: "Eastern Caribbean",
     },
+
     itinerary: [
       {
         day: 1,
@@ -156,7 +301,141 @@ const cruiseData = [
           },
         ],
       },
+      {
+        day: 2,
+        date: "2027-01-11",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-202",
+            name: "Ship Activities",
+            category: "Entertainment",
+            durationMinutes: 240,
+          },
+        ],
+      },
+      {
+        day: 3,
+        date: "2027-01-12",
+        port: {
+          name: "Amber Cove",
+          country: "Dominican Republic",
+          type: "port_of_call",
+        },
+        arrivalTime: "9:00 AM",
+        departureTime: "6:00 PM",
+        activities: [
+          {
+            id: "ACT-203",
+            name: "Puerto Plata Adventure",
+            category: "Excursion",
+            durationMinutes: 360,
+          },
+        ],
+      },
+      {
+        day: 4,
+        date: "2027-01-13",
+        port: {
+          name: "San Juan",
+          country: "Puerto Rico",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: "5:00 PM",
+        activities: [
+          {
+            id: "ACT-204",
+            name: "Old San Juan Tour",
+            category: "Excursion",
+            durationMinutes: 300,
+          },
+        ],
+      },
+      {
+        day: 5,
+        date: "2027-01-14",
+        port: {
+          name: "St. Thomas",
+          country: "U.S. Virgin Islands",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: "6:00 PM",
+        activities: [
+          {
+            id: "ACT-205",
+            name: "St. Thomas Beach Excursion",
+            category: "Excursion",
+            durationMinutes: 300,
+          },
+        ],
+      },
+      {
+        day: 6,
+        date: "2027-01-15",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-206",
+            name: "Comedy Show",
+            category: "Entertainment",
+            durationMinutes: 120,
+          },
+        ],
+      },
+      {
+        day: 7,
+        date: "2027-01-16",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-207",
+            name: "Final Night Celebration",
+            category: "Entertainment",
+            durationMinutes: 180,
+          },
+        ],
+      },
+      {
+        day: 8,
+        date: "2027-01-17",
+        port: {
+          name: "PortMiami",
+          country: "United States",
+          type: "arrival",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-208",
+            name: "Disembarkation",
+            category: "Cruise",
+            durationMinutes: 120,
+          },
+        ],
+      },
     ],
+
     cabins: [
       {
         id: "CAB-201",
@@ -184,6 +463,7 @@ const cruiseData = [
         ],
       },
     ],
+
     features: [
       {
         name: "Celebration Central",
@@ -203,6 +483,7 @@ const cruiseData = [
       capacity: 3215,
       rating: 4.7,
     },
+
     sailing: {
       departure: {
         port: {
@@ -214,6 +495,7 @@ const cruiseData = [
         date: "2027-02-14",
         time: "5:00 PM",
       },
+
       arrival: {
         port: {
           name: "Port Canaveral",
@@ -224,15 +506,18 @@ const cruiseData = [
         date: "2027-02-21",
         time: "7:00 AM",
       },
+
       duration: {
         nights: 7,
         days: 8,
       },
     },
+
     destination: {
       region: "Caribbean",
       description: "Western Caribbean",
     },
+
     itinerary: [
       {
         day: 1,
@@ -253,7 +538,141 @@ const cruiseData = [
           },
         ],
       },
+      {
+        day: 2,
+        date: "2027-02-15",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-302",
+            name: "Pool Day",
+            category: "Entertainment",
+            durationMinutes: 240,
+          },
+        ],
+      },
+      {
+        day: 3,
+        date: "2027-02-16",
+        port: {
+          name: "Roatan",
+          country: "Honduras",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: "5:00 PM",
+        activities: [
+          {
+            id: "ACT-303",
+            name: "Roatan Island Adventure",
+            category: "Excursion",
+            durationMinutes: 300,
+          },
+        ],
+      },
+      {
+        day: 4,
+        date: "2027-02-17",
+        port: {
+          name: "Costa Maya",
+          country: "Mexico",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: "5:00 PM",
+        activities: [
+          {
+            id: "ACT-304",
+            name: "Mayan Culture Tour",
+            category: "Excursion",
+            durationMinutes: 300,
+          },
+        ],
+      },
+      {
+        day: 5,
+        date: "2027-02-18",
+        port: {
+          name: "Cozumel",
+          country: "Mexico",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: "6:00 PM",
+        activities: [
+          {
+            id: "ACT-305",
+            name: "Snorkeling Adventure",
+            category: "Excursion",
+            durationMinutes: 240,
+          },
+        ],
+      },
+      {
+        day: 6,
+        date: "2027-02-19",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-306",
+            name: "Specialty Dining",
+            category: "Dining",
+            durationMinutes: 120,
+          },
+        ],
+      },
+      {
+        day: 7,
+        date: "2027-02-20",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-307",
+            name: "Live Entertainment",
+            category: "Entertainment",
+            durationMinutes: 180,
+          },
+        ],
+      },
+      {
+        day: 8,
+        date: "2027-02-21",
+        port: {
+          name: "Port Canaveral",
+          country: "United States",
+          type: "arrival",
+        },
+        arrivalTime: "7:00 AM",
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-308",
+            name: "Disembarkation",
+            category: "Cruise",
+            durationMinutes: 120,
+          },
+        ],
+      },
     ],
+
     cabins: [
       {
         id: "CAB-301",
@@ -281,6 +700,7 @@ const cruiseData = [
         ],
       },
     ],
+
     features: [
       {
         name: "Ocean Boulevard",
@@ -300,6 +720,7 @@ const cruiseData = [
       capacity: 4000,
       rating: 4.9,
     },
+
     sailing: {
       departure: {
         port: {
@@ -311,6 +732,7 @@ const cruiseData = [
         date: "2027-03-07",
         time: "5:45 PM",
       },
+
       arrival: {
         port: {
           name: "Port Canaveral",
@@ -321,15 +743,18 @@ const cruiseData = [
         date: "2027-03-11",
         time: "9:00 AM",
       },
+
       duration: {
         nights: 4,
         days: 5,
       },
     },
+
     destination: {
       region: "Bahamas",
       description: "Bahamas & Castaway Cay",
     },
+
     itinerary: [
       {
         day: 1,
@@ -350,7 +775,84 @@ const cruiseData = [
           },
         ],
       },
+      {
+        day: 2,
+        date: "2027-03-08",
+        port: {
+          name: "Nassau",
+          country: "Bahamas",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:00 AM",
+        departureTime: "5:00 PM",
+        activities: [
+          {
+            id: "ACT-402",
+            name: "Nassau Island Tour",
+            category: "Excursion",
+            durationMinutes: 300,
+          },
+        ],
+      },
+      {
+        day: 3,
+        date: "2027-03-09",
+        port: {
+          name: "Castaway Cay",
+          country: "Bahamas",
+          type: "port_of_call",
+        },
+        arrivalTime: "8:30 AM",
+        departureTime: "5:00 PM",
+        activities: [
+          {
+            id: "ACT-403",
+            name: "Castaway Cay Beach Day",
+            category: "Excursion",
+            durationMinutes: 360,
+          },
+        ],
+      },
+      {
+        day: 4,
+        date: "2027-03-10",
+        port: {
+          name: "At Sea",
+          country: "International Waters",
+          type: "sea_day",
+        },
+        arrivalTime: null,
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-404",
+            name: "Family Entertainment",
+            category: "Entertainment",
+            durationMinutes: 240,
+          },
+        ],
+      },
+      {
+        day: 5,
+        date: "2027-03-11",
+        port: {
+          name: "Port Canaveral",
+          country: "United States",
+          type: "arrival",
+        },
+        arrivalTime: "9:00 AM",
+        departureTime: null,
+        activities: [
+          {
+            id: "ACT-405",
+            name: "Disembarkation",
+            category: "Cruise",
+            durationMinutes: 120,
+          },
+        ],
+      },
     ],
+
     cabins: [
       {
         id: "CAB-401",
@@ -378,6 +880,7 @@ const cruiseData = [
         ],
       },
     ],
+
     features: [
       {
         name: "Disney's Oceaneer Club",
